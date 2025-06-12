@@ -552,7 +552,7 @@ script = ExtResource("1_hjaqi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5nkdk")
-animation = &"north_east_bow_attack"
+animation = &"north_west_bow_attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visibility_layer = 6

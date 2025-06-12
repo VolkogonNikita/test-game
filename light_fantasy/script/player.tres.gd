@@ -17,11 +17,6 @@ func _physics_process(delta: float) -> void:
 	
 	play_anim(direction)
 	
-	if is_on_floor():
-		print("1")
-	elif is_on_wall():
-		print("2")
-	
 func play_anim(dir):
 	if PLAYER_STATE == "idle":
 		$AnimatedSprite2D.play("idle")
@@ -42,3 +37,6 @@ func play_anim(dir):
 			$AnimatedSprite2D.play("south_west_walk")
 		if dir.x < -.5 and dir.y < -.5:
 			$AnimatedSprite2D.play("north_west_walk")
+
+func player():
+	pass
