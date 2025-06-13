@@ -4,6 +4,8 @@ var SPEED = 100
 
 var PLAYER_STATE
 
+@export var inventory: Inventory
+
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("right", "left", "up", "down")
 	

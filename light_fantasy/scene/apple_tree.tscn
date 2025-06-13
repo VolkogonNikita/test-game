@@ -53,4 +53,5 @@ one_shot = true
 position = Vector2(0, -1)
 
 [connection signal="body_entered" from="pickable area" to="." method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="pickable area" to="." method="_on_pickable_area_body_exited"]
 [connection signal="timeout" from="growth_timer" to="." method="_on_growth_timer_timeout"]

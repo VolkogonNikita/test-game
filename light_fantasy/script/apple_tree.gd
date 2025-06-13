@@ -22,10 +22,12 @@ func _process(delta: float) -> void:
 
 func _on_pickable_area_body_entered(body: Node2D) -> void:
 	if body.has_method("player"):
+		print("player is in an area")
 		player_in_area = true
 
 func _on_pickable_area_body_exited(body: Node2D) -> void:
 	if body.has_method("player"):
+		print("player is not in an area")
 		player_in_area = false
 
 func _on_growth_timer_timeout() -> void:
