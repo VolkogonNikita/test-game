@@ -19,7 +19,7 @@ func _process(delta: float) -> void:
 		if player_in_area:
 			if Input.is_action_just_pressed("e"):
 				state = "no apples"
-				print(state)
+				#print(state)
 				drop_apple()
 
 func _on_pickable_area_body_entered(body: Node2D) -> void:
